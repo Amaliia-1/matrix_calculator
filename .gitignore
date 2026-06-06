@@ -1,0 +1,7 @@
+*.dev
+
+*.o
+*.exe
+*.a
+
+build/
