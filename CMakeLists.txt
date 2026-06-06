@@ -4,7 +4,7 @@ project(MatrixCalculator)
 set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 
-# Собираем всё вместе для тестов (без библиотеки)
+
 add_executable(matrix_tests 
     tests/test_matrix.cpp
     src/matrix.cpp
