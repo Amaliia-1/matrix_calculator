@@ -36,5 +36,5 @@ TEST_CASE("Addition mismatch") {
 
 TEST_CASE("Singular matrix") {
 	Matrix<double> A = {{1,2},{2,4}};
-	CHECK_THROWS_AS(A.determinant(), std::runtime_error);
+	CHECK(A.determinant() == doctest::Approx(0.0));
 }
