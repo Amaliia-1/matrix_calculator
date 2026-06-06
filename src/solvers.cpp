@@ -58,7 +58,6 @@ T determinant_gaussian(const Matrix<T>& A) {
 		}
 		
 		if (max_val < T{1e-12}) {
-			// Матрица вырождена -> определитель = 0
 			return T{0};
 		}
 		
@@ -83,7 +82,7 @@ T determinant_gaussian(const Matrix<T>& A) {
 	return det;
 }
 
-// Явная инстанциация
+
 template std::vector<double> solve_lu(const Matrix<double>&, const std::vector<double>&);
 template Matrix<double> inverse_lu(const Matrix<double>&);
 template double determinant_gaussian(const Matrix<double>&);
